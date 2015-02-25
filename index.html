@@ -16,12 +16,27 @@
 		<meta name="twitter:url" content='<a href="https://cryptostorm.is/" target="_blank" rel="nofollow">https://cryptostorm.is/</a>' />
 		<meta name="alexaVerifyID" content="xKHQ-VYcz6hjbvQg-W-O1lBSVvk"/>
 		<link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
-		<link href="css/bootstrap.min.css" rel="stylesheet" /> <!-- v3.2.0 -->
-		<link href="css/font-awesome.min.css" rel="stylesheet" /> <!-- v4.3.0. -->
 		<!--[if lt IE 9]>
 		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
+		<link href="css/bootstrap.min.css" rel="stylesheet" /> <!-- v3.2.0 -->
+		<link href="css/font-awesome.min.css" rel="stylesheet" /> <!-- v4.3.0. -->
 		<link href="css/styles.css" rel="stylesheet">
+		<script type="text/javascript">
+			//<![CDATA[
+			function calcSHA()
+			{
+				calcHash("SHA-512");
+			}
+			function calcHash(variant)
+			{
+				var tmp = document.getElementById("ascii-comp");
+				var shaObj = new jsSHA(document.getElementById("ascii-input").value, "ASCII");
+				document.getElementById("ascii-result").value = shaObj.getHash(variant, "HEX");
+				document.getElementById("ascii-result").select();
+			}
+			//]]>
+		</script>
 	</head>
 	<body>
 		<!--NAVIGATION-->
@@ -452,7 +467,25 @@
 							& we've got <a href="https://cryptostorm.org/viewtopic.php?f=37&t=5996">openvpn configs</a> (all OS) if your tastes run a bit 'raw' - until this section's tight<br/>
 							we like complex challenges, but we deliver elegant, fluff-free service that works in real life.<br/>
 							& you can always give our no-cost <a href="https://cryptostorm.org/viewforum.php?f=58">cryptofree</a> (ie beer) capped-speed version a try, because free<br/><br/>
+							hash your token before usage: <a href="#0" class="cd-popup-trigger">sha512 calculator</a><br/><br/>
 							♥
+							<!-- SHA512 HASH -->
+							<div class="cd-popup" role="alert">
+								<div class="cd-popup-container">
+									<h4> SHA512 Calculator</h4>
+									<p><label for="ascii-input">Token:</label><br/><input type="text" size="32" autofocus="" value="Your token..." id="ascii-input" /></p>
+									<a href="javascript:void(0);" class="btn btn-primary btn-large" onclick="calcSHA();">&nbsp;&nbsp;Calculate!&nbsp;&nbsp;</a><br/><br/>
+									<p><label for="ascii-result">Hash:</label><br/><input type="text" size="32" id="ascii-result" /> <span id="ascii-comp"></span></p><br/>
+									<small><ul>
+										<li>Uses <a href="js/sha512.js" target ="_blank">jsSHA 1.3</a> by Brian Turek (<a href="http://jssha.sourceforge.net" target ="_blank">jssha.sourceforge.net</a>).</li>
+										<li>Take the above result from the Hash field and use it as <b>username</b> in your OpenVPN window. Password can be left blank. I know, right?!</li>
+										<li>This calculates your token's hash client side (using Javascript in your fave browser) so&mdash;in theory&mdash;your token will never get 'on the wires' and thus will never be seen by others.</li>
+										<li>This obviously requires Javascript (which is sort of the point as it keeps things on your PC as opposed to out on the wires where the NSA or whoever can scrape them off of the interwebs) so if you're using Noscript or have Javascript turned off you're pretty much better off using other methods for getting your hash. Sorry.</li>
+									</ul></small>
+									<a href="#0" class="cd-popup-close img-replace"></a>
+								</div>
+							</div>
+							<!-- /SHA512 HASH -->
 						</p>
 						<div class="row">
 							<div class="col-sm-10 text-left">
@@ -654,9 +687,10 @@
 		<!--<whatcomesbelowthefooterofcoursethescriptsbutyoureallydidntneedtoknowthat />-->
 		<!--<notetoselfiwishthiswerexlmsothatwouldmakesense />-->
 		<!-- script references -->
-		<script src="js/jquery.min.js"></script> <!-- v2.0.2 -->
-		<script src="js/bootstrap.min.js"></script> <!-- v3.2.0 -->
-		<script src="js/scripts.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script> <!-- v2.0.2 -->
+		<script type="text/javascript" src="js/bootstrap.min.js"></script> <!-- v3.2.0 -->
+		<script type="text/javascript" src="js/scripts.js"></script>
+		<script type="text/javascript" src="js/sha512.js"></script>
 	</body>
 </html>
 <!--<pre>
