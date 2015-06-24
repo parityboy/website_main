@@ -9,6 +9,7 @@
 		<style type="text/css">
 			body, html {
 				background-color:#466;
+				background-image:url('assets/bg8.png');
 				color:#cee;
 				margin:0;
 				padding:0;
@@ -17,11 +18,8 @@
 			div#container {
 				background-color:#133;
 				padding:6px 24px 12px;
-				width:80%;
-				margin-top:48px;
-				margin-bottom:48px;
-				margin-left:10%;
-				margin-right:10%;
+				width:66%;
+				margin:48px auto;
 				border-radius:6px;
 				box-shadow: 3px 3px 5px #133;
 			}
@@ -30,6 +28,9 @@
 				margin:12px 0 20px;
 				color:#a47;
 			}
+			p, small{
+				color:#466;
+			}
 			a {
 				color:#3aa;
 				text-decoration:none;
@@ -37,10 +38,7 @@
 			}
 			a:hover {
 				color:#a47;
-				border-bottom:1px solid #466;
-			}
-			p, small, small > a {
-				color:#466;
+				border-bottom:1px solid #a47;
 			}
 			ul {
 				list-style-type:circle;
@@ -59,8 +57,8 @@
 			@media screen and (max-width:1000px) {
 				div#container {
 					padding:6px 24px 12px;
-					margin:0;
-					width:100%;
+					margin:auto;
+					width:inherit;
 					border-radius:0;
 					box-shadow: 3px 3px 5px #110;
 				}
@@ -74,43 +72,50 @@
 				<hr/>
 			<h3>The Network</h3>
 				<ul>
-					<li>OpenVPN Configuration Files: <a href="https://cryptostorm.org/conf">https://cryptostorm.org/conf</a></li>
-					<li>Windows Widget: <a href="https://cryptostorm.org/widget">https://cryptostorm.org/widget</a></li>
-					<li>Cryptofree: <a href="https://cryptofree.me/">https://cryptofree.me/</a><br/>
+					<li>OpenVPN Configuration Files: <a href="https://cryptostorm.org/conf">cryptostorm.org/conf</a></li>
+					<li>Windows Widget: <a href="https://cryptostorm.org/widget">cryptostorm.org/widget</a></li>
+					<li>Cryptofree: <a href="https://cryptofree.me/">cryptofree.me</a><br/>
 						<small>Free access to the Cryptostorm Private Network (same features, limited speed).</small></li>
-					<li>Token Hasher: <a href="https://cryptostorm.is/#section6">https://cryptostorm.is/#section6</a><br/>
+					<li>Token Hasher: <a href="https://cryptostorm.is/#section6">cryptostorm.is/#section6</a><br/>
 						<small>You have to hash the token you bought before you can use it.</small></li>
-					<li>VPN Nodes and DNS Server IPs: <a href="https://github.com/cryptostorm/cryptohaven/blob/master/cstorm_networkstuff/NodesOfCryptostorm.txt">https://github.com/[...]/NodesOfCryptostorm.txt</a></li>
-					<li>VPN Connection IP Checker: <a href="https://cryptostorm.is/test.cgi">https://cryptostorm.is/test.cgi</a><br/>
+					<li>Token Checker: <a href="https://cryptostorm.nu/">cryptostorm.nu</a><br/>
+						<small>Check validity and duration of tokens.</small></li>
+					<li>VPN Nodes and DNS Server IPs: <a href="https://github.com/cryptostorm/cryptohaven/blob/master/cstorm_networkstuff/NodesOfCryptostorm.txt">github.com/[...]/NodesOfCryptostorm.txt</a></li>
+					<li>VPN Connection IP Checker: <a href="https://cryptostorm.is/test.cgi">cryptostorm.is/test.cgi</a><br/>
 						<small>Check if you're connected to the Cryptostorm Darknet.</small></li>
-					<li>Torrent IP Checker: <a href="https://cryptostorm.is/torrentip">https://cryptostorm.is/torrentip</a><br/>
+					<li>Torrent IP Checker: <a href="https://cryptostorm.is/torrentip">cryptostorm.is/torrentip</a><br/>
 						<small>Check which IP address your torrent client sends to trackers and peers.</small></li>
-					<li>Torstorm: <a href="https://torstorm.org/">https://torstorm.org/</a><br/>
-						<small>Tor proxy. Simply replace the ".onion" part of an URL with ".torstorm.org".</small></li>
-					<li>STUNnion: <a href="http://stunmbj4vvnuv5pr.onion/">http://stunmbj4vvnuv5pr.onion/</a><br/>
+					<li>Torstorm: <a href="https://torstorm.org/">torstorm.org</a><br/>
+						<small>Browser-based access to .onion sites. Simply replace the ".onion" part of an URL with ".torstorm.org".</small></li>
+					<li>STUNnion: <a href="http://stunmbj4vvnuv5pr.onion/">stunmbj4vvnuv5pr.onion</a><br/>
 						<small>WebRTC IP leak test for the Tor network.</small></li>
-					<li>TPB Tor: <a href="http://uj3wazyk5u4hnvtk.onion/">http://uj3wazyk5u4hnvtk.onion/</a><br/>
+					<li>TPB Tor: <a href="http://uj3wazyk5u4hnvtk.onion/">uj3wazyk5u4hnvtk.onion</a><br/>
 						<small>The Pirate Bay via the Tor network.</small></li>
-					<li>KAT Proxy: <a href="https://cryptostorm.is:8081/">https://cryptostorm.is:8081/</a><br/>
+					<li>KAT Proxy: <a href="https://cryptostorm.org/kat">cryptostorm.org/kat</a><br/>
 						<small>An Icelandic proxy for Kickass Torrents.</small></li>
+					<li>Goodies: <a href="https://cryptostorm.is/goodies">cryptostorm.is/goodies</a><br/>
+						<small>A collection of tools, projects, and haberdasheries.</small></li>
 				</ul>
 			<br/>
 			<h3>3rd Party Tools</h3>
 				<ul>
-					<li>Speed Test (HTML5): <a href="https://speedof.me/">https://speedof.me/</a></li>
-					<li>Speed Test (Flash): <a href="http://www.speedtest.net/">http://www.speedtest.net/</a></li>
-					<li>IP/DNS/etc. Detection: <a href="https://ipleak.net/">https://ipleak.net/</a></li>
-					<li>Browser Fingerprinting: <a href="https://panopticlick.eff.org/">https://panopticlick.eff.org/</a></li>
+					<li>Uptime Check: <a href="https://cryptostorm.is/uptime">cryptostorm.is/uptime</a> or <a href="http://stats.pingdom.com/c9um3ts6kmjd">stats.pingdom.com/c9um3ts6kmjd</a></li>
+					<li>Speed Test (HTML5): <a href="https://speedof.me/">speedof.me</a></li>
+					<li>Speed Test (Flash): <a href="http://www.speedtest.net/">speedtest.net</a></li>
+					<li>IP/DNS/etc. Detection: <a href="https://ipleak.net/">ipleak.net</a></li>
+					<li>Browser Fingerprinting: <a href="https://panopticlick.eff.org/">panopticlick.eff.org</a></li>
 				</ul>
 			<br/>
 			<h3>Contacts, Contributions, and Writings</h3>
 				<ul>
-					<li>Forum: <a href="https://cryptostorm.org/">https://cryptostorm.org/</a></li>
+					<li>Contact Channels: <a href="https://cryptostorm.org/contact">cryptostorm.org/contact</a></li>
+					<!-- <li>Forum: <a href="https://cryptostorm.org/">cryptostorm.org</a></li> -->
 					<li>IRC: <a href="irc://cryptostorm.is:6697/#cryptostorm">irc://cryptostorm.is:6697/#cryptostorm</a></li>
-					<li>Twitter: <a href="https://twitter.com/cryptostorm_is">https://twitter.com/cryptostorm_is</a></li>
-					<li>Technical Blog: <a href="https://cryptostorm.is/blog/">https://cryptostorm.is/blog</a></li>
-					<li>Non-technical Blog: <a href="http://pure.cryptohaven.net/">http://pure.cryptohaven.net/</a></li>
-					<li>Github: <a href="https://github.com/cryptostorm">https://github.com/cryptostorm</a></li>
+					<li>IRC (Webchat): <a href="https://cryptostorm.nu/chat">cryptostorm.nu/chat</a></li>
+					<li>Twitter: <a href="https://twitter.com/cryptostorm_is">twitter.com/cryptostorm_is</a></li>
+					<li>Technical Blog: <a href="https://cryptostorm.is/blog/">cryptostorm.is/blog</a></li>
+					<li>Non-technical Blog: <a href="http://pure.cryptohaven.net/">pure.cryptohaven.net</a></li>
+					<li>Github: <a href="https://github.com/cryptostorm">github.com/cryptostorm</a></li>
 				</ul>
 			<br/>
 		</div>
