@@ -7,6 +7,17 @@
 		<title>Cryptostorm's Guide to Where Things Are</title>
 		<link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
 		<style type="text/css">
+			@font-face {
+				font-family:'ab2-regular';
+				src:url('./fonts/ab2-webfont.eot');
+				src:url('./fonts/ab2-webfont.eot?#iefix') format('embedded-opentype'),
+					url('./fonts/ab2-webfont.woff2') format('woff2'),
+					url('./fonts/ab2-webfont.woff') format('woff'),
+					url('./fonts/ab2-webfont.ttf') format('truetype'),
+					url('./fonts/ab2-webfont.svg#ab2-regular') format('svg');
+				font-weight:normal;
+				font-style:normal;
+			}
 			body, html {
 				background-color:#466;
 				background-image:url('assets/bg8.png');
@@ -18,15 +29,15 @@
 			}
 			div#container {
 				background-color:#133;
-				padding:6px 24px 12px;
+				padding:12px 24px;
 				margin:48px auto;
 				width:66%;
 				max-width:1280px;
 				border-radius:6px;
 				box-shadow: 3px 3px 5px #133;
 			}
-			h1, h3 {
-				font-family:serif;
+			h1, h2 {
+				font-family:'ab2-regular',serif;
 				margin:12px 0 20px;
 				color:#a47;
 			}
@@ -62,7 +73,6 @@
 			}
 			@media screen and (max-width:1000px) {
 				div#container {
-					padding:6px 24px 12px;
 					margin:auto;
 					width:inherit;
 					border-radius:0;
@@ -74,8 +84,9 @@
 		<div id="container">
 			<h1>Cryptostorm: You are Here.</h1>
 			<p><i>There is madness to our method.</i></p>
-				<hr/>
-			<h3>The Network</h3>
+			<hr/>
+			<br/>
+			<h2>The Network</h2>
 				<ul>
 					<li><span>OpenVPN Configuration Files: <a href="https://cryptostorm.org/conf">cryptostorm.org/conf</a> or <a href="https://github.com/cryptostorm/cryptostorm_client_configuration_files">github.com/&hellip;/conf</a></span></li>
 					<li><span>Windows Widget: <a href="https://cryptostorm.org/widget">cryptostorm.org/widget</a></span></li>
@@ -98,7 +109,7 @@
 						<small>WebRTC IP leak test for the Tor network.</small></span></li>
 				</ul>
 			<br/>
-			<h3>Torrent Gimmicks</h3>
+			<h2>Torrent Gimmicks</h2>
 				<ul>
 					<li><span>Torrent IP Checker: <a href="https://cryptostorm.is/torrentip">cryptostorm.is/torrentip</a><br/>
 						<small>Check which IP address your torrent client sends to trackers and peers.</small></span></li>
@@ -110,7 +121,7 @@
 						<small>Search addons for KAT, TPB, and other related projects.</small></span></li>
 				</ul>
 			<br/>
-			<h3>3rd Party Tools</h3>
+			<h2>3rd Party Tools</h2>
 				<ul>
 					<li><span>Uptime Check: <a href="https://cryptostorm.is/uptime">cryptostorm.is/uptime</a> or <a href="http://stats.pingdom.com/c9um3ts6kmjd">stats.pingdom.com/c9um3ts6kmjd</a></span></li>
 					<li><span>Speed Tests: <a href="https://speedof.me/">speedof.me</a> (HTML5); <a href="http://www.speedtest.net/">speedtest.net</a> (Flash)</span></li>
@@ -118,7 +129,7 @@
 					<li><span>Browser Fingerprinting: <a href="https://panopticlick.eff.org/">panopticlick.eff.org</a></span></li>
 				</ul>
 			<br/>
-			<h3>Contacts, Contributions, and Writings</h3>
+			<h2>Contacts, Contributions, and Writings</h2>
 				<ul>
 					<li><span>Contact Channels: <a href="https://cryptostorm.org/contact">cryptostorm.org/contact</a></span></li>
 					<li><span>Forum: <a href="https://cryptostorm.org/">cryptostorm.org</a></span></li>
