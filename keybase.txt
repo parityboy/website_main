@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/dfkt
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://cryptostorm.is
+  * I am dfkt (https://keybase.io/dfkt) on keybase.
+  * I have a public key with fingerprint 76EA 25E2 D98D E8FA 4F05  DBED D6EB C93D 62BA FD8D
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01018c1e25ec12b51f2d76011a95ab4a54d090b9305042b1be4ac627bd83403741690a",
+            "fingerprint": "76ea25e2d98de8fa4f05dbedd6ebc93d62bafd8d",
+            "host": "keybase.io",
+            "key_id": "d6ebc93d62bafd8d",
+            "kid": "01018c1e25ec12b51f2d76011a95ab4a54d090b9305042b1be4ac627bd83403741690a",
+            "uid": "1260e689fe8ec70ba15b5f972bc11000",
+            "username": "dfkt"
+        },
+        "service": {
+            "hostname": "cryptostorm.is",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1443736339,
+    "expire_in": 157680000,
+    "prev": "673d18557be1028ac02035eeae27bff74323e200ed4542c7c62a8fe1c287e867",
+    "seqno": 18,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.47
+Comment: https://keybase.io/crypto
+
+yMIoAnicrZJbSBVRFIbPUVMypcKiC0g5PUVie899TlHRhTKssIt1JDrs2+ignjnN
+jJqllaYWFfhQGN1AxIrUQEIsu5BpYBQUSBJUFhXZi0YXKojK9oi99djTZq/9/9/+
+12LdS40PJAeDPzvbTguby4MP7zaWBvJS29L2CdimFUJon1DExg9WTJnrRYosKoQE
+AAHUCWSiwggUsQJNkWoqgBAZCsIyUmQKDIANCShAFjHETEZEFTVMdUkGkiZD1QBI
+yBRMK1rAnJhjRT2O1VSGOFKkhk6ZbiLZBArFjFKVYWJIVBUxMqlOubHQdn0HD4eR
+y7Ism9f4JTIe7x/6/5y7dBwHRRUwVTdMpjOiAYygghXT0ERMIAQA+EKXOVFUwvxU
+ZpEnVGUKvFJmEeYP1e9i4pU4FTGPX22nJMtyuTPm2J5N7GL+Vuh5MTfke72KmC8u
+ZzgygYlgK0r5FLmjjDmuZUeFEORK4lk+F8qypEmqJBmZAtsTsxwWsXyFoqk6Twj8
+f1gZR6qaRKGuKBpmEIg6IkAEksIYYrx909RkSZSYCACjsiKLRONjQbrJIBF1jemq
+JviN7Y7anK3znKiAM12rIIq8UocJVb09OxMCweRA4qQ4f70CyZOn/V26D5eSxvIr
+R9feLm45erl65v5NNbPqTn56sii7o+FAVrhx6HNN2nZpzqETN4cfbE3OWdEzo/vr
+7E2hM5XPF52be+jim8EDP07R1h/Lc+fVXHj2MeKS+pGZmUvs2pcLwylpHaevpa9s
+OPKqydth5je1Hq+NXybu2rg0qY+c7y1sX7ytLwWto+lTEqo73+UNZw1kDI6lJh2s
+HWzfEtUHvui5q1tWjJY8Lasf6l74Ol+7O/V99uNZiSkvMt6O9HWM3bpu3+86drZ5
+fUv/nbg1LaPDoaH+8KqrJDL7d97K/NiueffDj6qCH3qmt/7a+dic37m3uuLwhlcD
+I82/ur5/u3LiRmVObd2n/gUPwjIp+AMCs0MQ
+=jK7S
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/dfkt
+
+==================================================================
