@@ -17,6 +17,5 @@ DNScrypt - https://www.opendns.com/about/innovations/dnscrypt/
 (and soon to come)
 Obfsproxy - https://www.torproject.org/projects/obfsproxy.html.en
 
-
 I (df) dunno wtf Namestream is, I haven't bothered looking into it yet.
 So anything that says we (CS) use Namestream is high.
