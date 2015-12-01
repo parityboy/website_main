@@ -1,0 +1,22 @@
+DeepDNS consists of:
+
+CurveDNS  - http://curvedns.on2it.net/
+
+DNSChain  - https://github.com/okTurtles/dnschain
+(which is backed by the completely unrelated project):
+Namecoin - https://namecoin.info/?p=download
+
+PowerDNS  - https://www.powerdns.com/downloads.html
+Unbound   - https://www.unbound.net/download.html
+i2pd      - https://github.com/PurpleI2P/i2pd
+tor       - https://www.aol.com/ (haha, fuck you)
+
+(and implemented server-side but not yet coded into the new widget): 
+DNScrypt - https://www.opendns.com/about/innovations/dnscrypt/
+
+(and soon to come)
+Obfsproxy - https://www.torproject.org/projects/obfsproxy.html.en
+
+
+I (df) dunno wtf Namestream is, I haven't bothered looking into it yet.
+So anything that says we (CS) use Namestream is high.
