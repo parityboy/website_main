@@ -31,7 +31,7 @@
 			}
 			function calcHash(variant)
 			{
-				var tmp = document.getelementById("ascii-comp");
+				var tmp = document.getElementById("ascii-comp");
  				var shaObj = new jsSHA(document.getElementById("ascii-input").value, "ASCII");
  				document.getElementById("ascii-result").value = shaObj.getHash(variant, "HEX");
  				document.getElementById("ascii-result").select();
@@ -683,7 +683,7 @@ else { document.getElementById(d).style.display = "none"; }
 			<div class="col-sm-4 col-sm-offset-4" style="padding:0;">
 				<div class="list-group-item text-center" style="padding:0;margin:0;">
 					<a class="twitter-timeline" style="padding:0;margin:0;" href="https://twitter.com/cryptostorm_is" data-widget-id="566308851675582464" height="300px" data-theme="light" data-link-color="#514" data-border-color="#cee" data-chrome="noheader nofooter transparent">Tweets by @cryptostorm_is</a>
-					<script>!function(d,s,id){var js,fjs=d.getelementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getelementById(id)){js=d.createelement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 					<br/>
 					<small><sup>if you see no twitter stuff above we'll sue adblock, ghostery, disconnect, etc.</sup></small>
 				</div>
