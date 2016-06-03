@@ -498,6 +498,7 @@
 										<li>Take the above result from the Hash field and use it as <b>username</b> in your OpenVPN window. Password can be left blank. I know, right?!</li>
 										<li>This calculates your token's hash client side (using Javascript in your fave browser) so&mdash;in theory&mdash;your token will never get 'on the wires' and thus will never be seen by others.</li>
 										<li>This obviously requires Javascript (which is sort of the point as it keeps things on your PC as opposed to out on the wires where the NSA or whoever can scrape them off of the interwebs) so if you're using Noscript or have Javascript turned off you're pretty much better off using other methods for getting your hash. Sorry.</li>
+										<li>Our jsSHA code has been modified to automatically remove spaces, so if you're using this for anything besides token hashes, you might get incorrect results.</li>
 									</ul></small>
 									<a href="#0" class="cd-popup-close img-replace"></a>
 								</div>
@@ -753,7 +754,7 @@ else { document.getElementById(d).style.display = "none"; }
 		<script type="text/javascript" src="js/jquery.min.js"></script> <!-- v2.0.2 -->
 		<script type="text/javascript" src="js/bootstrap.min.js"></script> <!-- v3.2.0 -->
 		<script type="text/javascript" src="js/scripts.js"></script>
-		<script type="text/javascript" src="js/sha512.min.js"></script>
+		<script type="text/javascript" src="js/sha512.js"></script>
 	</body>
 </html>
 <!--<pre>
