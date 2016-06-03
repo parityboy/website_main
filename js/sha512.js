@@ -949,8 +949,10 @@
 		else if (("ASCII" === inputFormat) ||
 			 ('undefined' === typeof(inputFormat)))
 		{
-			this.strBinLen = srcString.length * charSize;
-			this.strToHash = str2binb(srcString);
+                       var nospace = srcString;
+                       var val = nospace.replace(/\s/g, "");
+                       this.strBinLen = val.length * charSize;
+                       this.strToHash = str2binb(val);
 		}
 		else
 		{
