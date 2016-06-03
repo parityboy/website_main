@@ -950,7 +950,8 @@
 			 ('undefined' === typeof(inputFormat)))
 		{
                        var nospace = srcString;
-                       var val = nospace.replace(/\s/g, "");
+                       var val = nospace.replace(/[\x00-\x1F]/g, "");
+                       var val = nospace.replace(/\x7F/g, "");
                        this.strBinLen = val.length * charSize;
                        this.strToHash = str2binb(val);
 		}
