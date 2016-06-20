@@ -398,12 +398,31 @@
                                                                                <div class="list-group-item active">
                                                                                <h2 class="list-group-item-heading">credit card☇Stripe</h2>
                                                                                <h6>Don't like PayPal? Neither do we :-D</h6>
-                                                                               <h6>Below you can easily buy tokens with your credit/debit card via Stripe.com</h6>
+                                                                               <h6>Below you can easily buy tokens with your credit/debit card via Stripe.com<br>
+                                                                               and yes, those prepaid debit cards that PayPal doesn't like work just fine with Stripe.<br><br>
+                                                                               Your token will be delivered in-browser and via email.</h6>
                                                                                </div>
                                                                                <div class="list-group-item">
+										<script src="https://checkout.stripe.com/v2/checkout.js"></script>
+										<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+										<script>
+										$(document).ready(function() {
+                                                                                $("input[id='stripe']").on('click', function(event) {
+									        event.preventDefault();
+									        var $button = $(this),
+									        $form = $button.parents('form');
+									        var opts = $.extend({}, $button.data(), {
+										token: function(result) {
+									        $form.append($('<input>').attr({ type: 'hidden', name: 'stripeToken', value: result.id })).submit();
+									        }
+        								        });
+										StripeCheckout.open(opts);
+        									});
+										});
+										</script>
                                                                                <noscript>You must <a href="http://www.enable-javascript.com" target="_blank">enable JavaScript</a> in your web browser in order to pay via Stripe.</noscript>
                                                                                <form action="stripe_1wk" method="post">
-                                                                               <input class="btn btn-primary btn-lg btn-block"
+                                                                               <input class="btn btn-primary btn-lg btn-block" id="stripe"
                                                                                type="submit"
                                                                                value="one week - $1.86"
                                                                                data-key="pk_live_uFcfQfh89ET2zZYfB2KBhuW7"
@@ -415,7 +434,7 @@
                                                                                data-image="b6.png"
                                                                                /><br></form>
                                                                                <form action="stripe_1mo" method="post">
-                                                                               <input class="btn btn-primary btn-lg btn-block"
+                                                                               <input class="btn btn-primary btn-lg btn-block" id="stripe"
                                                                                type="submit"
                                                                                value="one month - $6"
                                                                                data-key="pk_live_uFcfQfh89ET2zZYfB2KBhuW7"
@@ -427,7 +446,7 @@
                                                                                data-image="b6.png"
                                                                                /><br></form>
                                                                                <form action="stripe_3mo" method="post">
-                                                                               <input class="btn btn-primary btn-lg btn-block"
+                                                                               <input class="btn btn-primary btn-lg btn-block" id="stripe"
                                                                                type="submit"
                                                                                value="three months - $16"
                                                                                data-key="pk_live_uFcfQfh89ET2zZYfB2KBhuW7"
@@ -439,7 +458,7 @@
                                                                                data-image="b6.png"
                                                                                /><br></form>
                                                                                <form action="stripe_6mo" method="post">
-                                                                               <input class="btn btn-primary btn-lg btn-block"
+                                                                               <input class="btn btn-primary btn-lg btn-block" id="stripe"
                                                                                type="submit"
                                                                                value="six months - $28"
                                                                                data-key="pk_live_uFcfQfh89ET2zZYfB2KBhuW7"
@@ -451,7 +470,7 @@
                                                                                data-image="b6.png"
                                                                                /><br></form>
                                                                                <form action="stripe_1yr" method="post">
-                                                                               <input class="btn btn-primary btn-lg btn-block"
+                                                                               <input class="btn btn-primary btn-lg btn-block" id="stripe"
                                                                                type="submit"
                                                                                value="one year - $52"
                                                                                data-key="pk_live_uFcfQfh89ET2zZYfB2KBhuW7"
@@ -463,7 +482,7 @@
                                                                                data-image="g6.png"
                                                                                /><br></form>
                                                                                <form action="stripe_2yr" method="post">
-                                                                               <input class="btn btn-primary btn-lg btn-block"
+                                                                               <input class="btn btn-primary btn-lg btn-block" id="stripe"
                                                                                type="submit"
                                                                                value="two years - $94"
                                                                                data-key="pk_live_uFcfQfh89ET2zZYfB2KBhuW7"
@@ -474,23 +493,6 @@
                                                                                data-description="two year token"
                                                                                data-image="g6.png"
                                                                                /><br></form>
-                                                                               <script src="https://checkout.stripe.com/v2/checkout.js"></script>
-                                                                               <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
-                                                                               <script>
-                                                                               $(document).ready(function() {
-                                                                               $(':submit').on('click', function(event) {
-                                                                               event.preventDefault();
-                                                                               var $button = $(this),
-                                                                               $form = $button.parents('form');
-                                                                               var opts = $.extend({}, $button.data(), {
-                                                                               token: function(result) {
-                                                                               $form.append($('<input>').attr({ type: 'hidden', name: 'stripeToken', value: result.id })).submit();
-                                                                               }
-                                                                               });
-                                                                               StripeCheckout.open(opts);
-                                                                               });
-                                                                               });
-                                                                               </script>
                                                                                </div>
                                                                                </div>
                                                                                </div>
