@@ -1,4 +1,4 @@
 <?php
-echo "moo\r\n";
+echo "dafuq\r\n";
 //moo
 ?>
