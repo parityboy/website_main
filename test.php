@@ -1,4 +1,4 @@
 <?php
-phpinfo();
+echo "hi\r\n";
 //moo
 ?>
