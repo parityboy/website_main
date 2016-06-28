@@ -23,6 +23,7 @@
                                         <link href="css/bootstrap.min.css" rel="stylesheet" /> <!-- v3.2.0 -->
                                         <link href="css/font-awesome.min.css" rel="stylesheet" /> <!-- v4.3.0. -->
                                         <link href="css/styles.css" rel="stylesheet">
+                                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
                                         <script type="text/javascript">
                                                         //<![CDATA[
                                                         function calcSHA()
@@ -71,7 +72,24 @@
                                                         </div>
                                         </nav>
                                         <!--SECTION1-->
+					<style>
+					p.boo {
+    					border-style: solid;
+    					border-color: red;
+					}
+					
+					p.yay {
+    					border-style: solid;
+    					border-color: green;
+					}
+					</style>
+                                        <script>
+                                                $.get('test-header',null,function(result) {
+                                                 $('div.isoncs').html(result);
+                                                },'html');
+                                        </script>
                                         <section class="container-fluid" id="section1">
+							<h2 class="text-center"><small><div class="isoncs"></div></small></h2>                                        	
                                                         <h1 class="text-center v-center">cryptostorm <i class="fa fa-cog fa-spin" style="color:#514;"></i> private network</h1>
                                                         <h2 class="text-center">no-compromise<small><sup>&reg;</sup></small> network<small><sup>&copy;</sup></small> security<small><sup>&trade;</sup></small>: opensource, anonymous token auth, drama-free</h2>
                                                         <br/><br/>
@@ -404,7 +422,6 @@
                                                                                </div>
                                                                                <div class="list-group-item">
 										<script src="https://checkout.stripe.com/v2/checkout.js"></script>
-										<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
 										<script>
 										$(document).ready(function() {
                                                                                 $("input[id='stripe']").on('click', function(event) {
