@@ -1,9 +1,24 @@
-        <!DOCTYPE html>
+<!DOCTYPE html>
         <html lang="en" />
                         <head>
                                         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
                                         <meta charset="utf-8" />
                                         <title>cryptostorm</title>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-75863175-1']);
+  _gaq.push(['_setDomainName', 'cryptostorm.is']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  
                                         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                                         <meta name="keywords" content="...once upon a time, in a galaxy far far away... we told google to go fuck themselves. Because we're craaaazy like that! Then we realised how stupid that was, and we cleaned up our meta tags. Well, we have not come to that time just yet. Still far, far away..." />
                                         <meta name="description" content="cryptostorm private network" />
@@ -420,6 +435,7 @@
                                                                                <h6>Don't like PayPal? Neither do we :-D</h6>
                                                                                <h6>Below you can easily buy tokens with your credit/debit card via Stripe.com<br>
                                                                                and yes, those prepaid debit cards that PayPal doesn't like work just fine with Stripe.<br><br>
+																			   Now supporting Bitcoin.<br><br>
                                                                                Your token will be delivered in-browser and via email.</h6>
                                                                                </div>
                                                                                <div class="list-group-item">
@@ -451,7 +467,8 @@
                                                                                data-allow-remember-me="false"
                                                                                data-description="one week token"
                                                                                data-image="b6.png"
-                                                                               /><br></form>
+										data-bitcoin="true"
+                                                                               ><br></form>
                                                                                <form action="stripe_1mo" method="post">
                                                                                <input class="btn btn-primary btn-lg btn-block" id="stripe"
                                                                                type="submit"
@@ -463,7 +480,8 @@
                                                                                data-allow-remember-me="false"
                                                                                data-description="one month token"
                                                                                data-image="b6.png"
-                                                                               /><br></form>
+										data-bitcoin="true"
+                                                                               ><br></form>
                                                                                <form action="stripe_3mo" method="post">
                                                                                <input class="btn btn-primary btn-lg btn-block" id="stripe"
                                                                                type="submit"
@@ -475,7 +493,8 @@
                                                                                data-allow-remember-me="false"
                                                                                data-description="three month token"
                                                                                data-image="b6.png"
-                                                                               /><br></form>
+										data-bitcoin="true"
+                                                                               ><br></form>
                                                                                <form action="stripe_6mo" method="post">
                                                                                <input class="btn btn-primary btn-lg btn-block" id="stripe"
                                                                                type="submit"
@@ -487,7 +506,8 @@
                                                                                data-allow-remember-me="false"
                                                                                data-description="six month token"
                                                                                data-image="b6.png"
-                                                                               /><br></form>
+										data-bitcoin="true"
+                                                                               ><br></form>
                                                                                <form action="stripe_1yr" method="post">
                                                                                <input class="btn btn-primary btn-lg btn-block" id="stripe"
                                                                                type="submit"
@@ -499,7 +519,8 @@
                                                                                data-allow-remember-me="false"
                                                                                data-description="one year token"
                                                                                data-image="g6.png"
-                                                                               /><br></form>
+										data-bitcoin="true"
+                                                                               ><br></form>
                                                                                <form action="stripe_2yr" method="post">
                                                                                <input class="btn btn-primary btn-lg btn-block" id="stripe"
                                                                                type="submit"
@@ -511,7 +532,8 @@
                                                                                data-allow-remember-me="false"
                                                                                data-description="two year token"
                                                                                data-image="g6.png"
-                                                                               /><br></form>
+										data-bitcoin="true"
+                                                                               ><br></form>
                                                                                </div>
                                                                                </div>
                                                                                </div>
@@ -522,38 +544,10 @@
                                                                                <h6>one-click purchase & delivery</h6>
                                                                                </div>
                                                                                <div class="list-group-item">
-                                                                               <p>BitPay orders are now processed instantly in-browser. DO NOT CLOSE YOUR BROWSER WHILE ORDERING</p>
+                                                                               <p>We've switched from BitPay to Stripe for Bitcoin orders.<br>
+																				So just use the buttons to the left and select "Bitcoin" in the new window.<br></p>
                                                                                </div>
-        <br><form action="https://bitpay.com/checkout" method="post" >
-         <input type="hidden" name="action" value="checkout" />
-         <input type="hidden" name="posData" value="" />
-         <input type="hidden" name="data" value="Gk7f3cnGKVPEPBAK9duzSYquvliDJF68aOJlge4g9Bml72Z07VSQEmojn13F/PjvE9eHhC6kGRNJdAMMB3C1XynNpmD8dXRXKNK9H6mjhnf8QR6jrDfY8YBVvgfXkGoZ6c4qBM2pkyqqj7xzQ87it2Ef5Pmd51E2UuuYhmU5jPQgg+dOPQlp+WMFfmUQOhaxHw+PSj98rqtJfPCJ1eVZ6Ul+ajN38+K0GgcNFxasHToR2oTB9X9lglGw46+AFwTfh9EgoflNjnrLli7XySi2j+WG6xefTS9KvFyADULQzQFkxTO+ZbMbdwWjHYgQiGoCJOKH2kMQqU2MrerWanA9cg==" />
-         <button class="btn btn-primary btn-lg btn-block"><small>BITPAY ·</small> 1 MONTH <small>· $3.86</small></button>
-        </form><br>
-        <form action="https://bitpay.com/checkout" method="post" >
-         <input type="hidden" name="action" value="checkout" />
-         <input type="hidden" name="posData" value="" />
-         <input type="hidden" name="data" value="Gk7f3cnGKVPEPBAK9duzSYquvliDJF68aOJlge4g9Bml72Z07VSQEmojn13F/PjvNITvhJBSR7vhbh4ZZEK7ZHmDkdoAFTmbSr9HElQJtdMd1DMbU3pSA3IvXMCR3/SR+zQc7qM4w7DvGe/oGUJdlqidPiNN072he/grYiHv9Mzc+KG9scfQKrgFi7FeLPrGbxUOvu3JWEvvXG2UWgFszbTisI2C0q+u0rHjZOs9wFgi3/Dn/nNm+4HKODpoNmG7bGxWx16vbQpkYeOKLU+wWKobP0I/HfDUvto4MgKQcafRPquJ+6G4qdawkzPLeRcZHbMSOGNm6SwAYBy6+sJeFQ==" />
-         <button class="btn btn-primary btn-lg btn-block"><small>BITPAY ·</small> 3 MONTHS <small>· $13</small></button>
-        </form><br>
-        <form action="https://bitpay.com/checkout" method="post" >
-          <input type="hidden" name="action" value="checkout" />
-          <input type="hidden" name="posData" value="" />
-          <input type="hidden" name="data" value="Gk7f3cnGKVPEPBAK9duzSYquvliDJF68aOJlge4g9Bml72Z07VSQEmojn13F/PjvWeIN2zDvmN4aF+7Zu7g7vOUhS9cUyW98KFX/GCQhgvaJ/ImldUVPRYQhaIoKIqBmBBsr5bIqOlUqaFmZLjakIHevS+M2I/Pz/7ZzVzU6KrGqdcl5cZMGaCZ1ff8qjy900odz1AGQkevRIzDeVVhnldHUPecp1Op0SnaoKwblat9J+fV2+qqiv4DGmVlRQ+qI6CPXjE1yKCKgSflcjFdAo3WfyoYITb88+eOghUwazLDSTdZ3NHRQpXZiSTYyT7B7IR1ggrSKr4hRO57nBvPkeQ==" />
-          <button class="btn btn-primary btn-lg btn-block"><small>BITPAY ·</small> 6 MONTHS <small>· $23</small></button>
-        </form><br>
-        <form action="https://bitpay.com/checkout" method="post" >
-          <input type="hidden" name="action" value="checkout" />
-          <input type="hidden" name="posData" value="" />
-          <input type="hidden" name="data" value="Gk7f3cnGKVPEPBAK9duzSYquvliDJF68aOJlge4g9Bml72Z07VSQEmojn13F/PjvpesiAbrgYt9GCMbvTewuoSaM0ksXuKdpeXW5NqniCZp3B1vHI2hvhOZKbEnfr1ZAzNNt/sC5/Vxj6h+HL/He4fM6IPim1hgoi19XhOf27AC3hqfAvQUkpLkD5DilmQguPQ027+SwuMnBh6xCO0mt4otwKT3CQXh8z2j7NSjR2xowMKSigH/Neqo1tustSSJzUIldjHiXPidhiPkSkhExlkd97rnfHB0TfoVfps9Jcn1Tbxi+Juty5e+zi2oHTn58ZIjnpdtgiKaToHtgnEXVfg==" />
-          <button class="btn btn-primary btn-lg btn-block"><small>BITPAY ·</small> 1 YEAR <small>· $47</small></button>
-        </form><br>
-        <form action="https://bitpay.com/checkout" method="post" >
-          <input type="hidden" name="action" value="checkout" />
-          <input type="hidden" name="posData" value="" />
-          <input type="hidden" name="data" value="Gk7f3cnGKVPEPBAK9duzSYquvliDJF68aOJlge4g9Bml72Z07VSQEmojn13F/Pjvdh77YGFxyXrLeGi5DgF2FCXVFz/g/Vo1ezxz7D9jOO2wzcTt0CkSohu1VGnOkNAvnYhyQN5+6jWF3NWYw09jt3+7Ri7bbZ2RvZb5ebStGICuqb2gIkw+plCHSau+bgGMaJZdHKuZgO2NY+x5ujLv3Yz4VmjKB8g+bNmfUOBCkFaBZz7wi09yQX7dSX307GkqpvxlqEjPPbfRFAh9gXohbiVf1LDSo7M5A/f5uJq5fUOWqegfeN86L7WeUF8Frz4tKlCgAhpDO/UMJG3/8QSc6w==" />
-          <button class="btn btn-primary btn-lg btn-block"><small>BITPAY ·</small> 2 YEARS <small>· $87</small></button>
-        </form><br>
+																				<i class="fa fa-hand-o-left fa-5x" aria-hidden="true"></i>																		
                                                                                </div>
                                                                                </div>
                                                         </div>
@@ -771,7 +765,8 @@
                                                         <!--TWITTER WIDGET - might be killed by some adblock lists. i blame steve jobs. also InfoSec Taylor Swift. and her hair.-->
                                                         <div class="col-sm-4 col-sm-offset-4" style="padding:0;">
                                                                         <div class="list-group-item text-center" style="padding:0;margin:0;">
-                                                                               <a class="twitter-timeline" style="padding:0;margin:0;" href="https://twitter.com/cryptostorm_is" data-widget-id="566308851675582464" height="300px" data-theme="light" data-link-color="#514" data-border-color="#cee" data-chrome="noheader nofooter transparent">Tweets by @cryptostorm_is</a>
+                                                                               <a class="twitter-timeline" style="padding:0;margin:0;" href="https://twitter.com/cryptostorm_is" data-widget-id="566308851675582464" height="300px" data-theme="light" 
+data-link-color="#514" data-border-color="#cee" data-chrome="noheader nofooter transparent">Tweets by @cryptostorm_is</a>
                                                                                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                                                                                <br/>
                                                                                <small><sup>if you see no twitter stuff above we'll sue adblock, ghostery, disconnect, etc.</sup></small>
