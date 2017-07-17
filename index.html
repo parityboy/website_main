@@ -1,24 +1,9 @@
-<!DOCTYPE html>
+        <!DOCTYPE html>
         <html lang="en" />
                         <head>
                                         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
                                         <meta charset="utf-8" />
                                         <title>cryptostorm</title>
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-75863175-1']);
-  _gaq.push(['_setDomainName', 'cryptostorm.is']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-  
                                         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                                         <meta name="keywords" content="...once upon a time, in a galaxy far far away... we told google to go fuck themselves. Because we're craaaazy like that! Then we realised how stupid that was, and we cleaned up our meta tags. Well, we have not come to that time just yet. Still far, far away..." />
                                         <meta name="description" content="cryptostorm private network" />
@@ -87,26 +72,26 @@
                                                         </div>
                                         </nav>
                                         <!--SECTION1-->
-					<style>
-					p.boo {
-    					border-style: solid;
-    					border-color: red;
-					}
-					
-					p.yay {
-    					border-style: solid;
-    					border-color: green;
-					}
-					</style>
+                                        <style>
+                                        p.boo {
+                                        border-style: solid;
+                                        border-color: red;
+                                        }
+
+                                        p.yay {
+                                        border-style: solid;
+                                        border-color: green;
+                                        }
+                                        </style>
                                         <script>
                                         setInterval(function(){
                                                 $.get('test-header',null,function(result) {
                                                  $('div.isoncs').html(result);
                                                 },'html');
-                                        }, 8000)
+                                        }, 9000)
                                         </script>
                                         <section class="container-fluid" id="section1">
-							<h2 class="text-center"><small><div class="isoncs"></div></small></h2>                                        	
+                                                        <h2 class="text-center"><small><div class="isoncs"></div></small></h2>
                                                         <h1 class="text-center v-center">cryptostorm <i class="fa fa-cog fa-spin" style="color:#514;"></i> private network</h1>
                                                         <h2 class="text-center">no-compromise<small><sup>&reg;</sup></small> network<small><sup>&copy;</sup></small> security<small><sup>&trade;</sup></small>: opensource, anonymous token auth, drama-free</h2>
                                                         <br/><br/>
@@ -388,7 +373,9 @@
                                                                                <h6>friendly pricing, quick access</h6>
                                                                                </div>
                                                                                <div class="list-group-item">
-                                                                               <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                                                               </select>
+                                                                               <br/>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                                                                                <input type="hidden" name="cmd" value="_s-xclick" />
                                                                                <input type="hidden" name="hosted_button_id" value="JWJCRTDN56B5Q" />
                                                                                <input type="hidden" name="on0" value="frequency">cstorm reoccurring subscriptions USD<br/><br/>
@@ -422,7 +409,7 @@
                                                                                   <option value="25x 1-month bundle">25x 1-month bundle ~ $97</option>
                                                                                </select>
                                                                                <br/>
-                                                                               <input type="hidden" name="currency_code" value="USD" />
+<input type="hidden" name="currency_code" value="USD" />
                                                                                <input type="hidden" name="submit" alt="cryptostormdarknet"/><button class="btn btn-primary btn-lg btn-block"><small>PAYPAL</small> ORDER</button>
                                                                                </form>
                                                                                </div>
@@ -435,26 +422,26 @@
                                                                                <h6>Don't like PayPal? Neither do we :-D</h6>
                                                                                <h6>Below you can easily buy tokens with your credit/debit card via Stripe.com<br>
                                                                                and yes, those prepaid debit cards that PayPal doesn't like work just fine with Stripe.<br><br>
-																			   Now supporting Bitcoin.<br><br>
+                                                                                                                                                           Now supporting Bitcoin.<br><br>
                                                                                Your token will be delivered in-browser and via email.</h6>
                                                                                </div>
                                                                                <div class="list-group-item">
-										<script src="https://checkout.stripe.com/v2/checkout.js"></script>
-										<script>
-										$(document).ready(function() {
+                                                                                <script src="https://checkout.stripe.com/v2/checkout.js"></script>
+                                                                                <script>
+                                                                                $(document).ready(function() {
                                                                                 $("input[id='stripe']").on('click', function(event) {
-									        event.preventDefault();
-									        var $button = $(this),
-									        $form = $button.parents('form');
-									        var opts = $.extend({}, $button.data(), {
-										token: function(result) {
-									        $form.append($('<input>').attr({ type: 'hidden', name: 'stripeToken', value: result.id })).submit();
-									        }
-        								        });
-										StripeCheckout.open(opts);
-        									});
-										});
-										</script>
+                                                                                event.preventDefault();
+                                                                                var $button = $(this),
+                                                                                $form = $button.parents('form');
+                                                                                var opts = $.extend({}, $button.data(), {
+                                                                                token: function(result) {
+                                                                                $form.append($('<input>').attr({ type: 'hidden', name: 'stripeToken', value: result.id })).submit();
+                                                                                }
+                                                                                });
+                                                                                StripeCheckout.open(opts);
+                                                                                });
+                                                                                });
+                                                                                </script>
                                                                                <noscript>You must <a href="http://www.enable-javascript.com" target="_blank">enable JavaScript</a> in your web browser in order to pay via Stripe.</noscript>
                                                                                <form action="stripe_1wk" method="post">
                                                                                <input class="btn btn-primary btn-lg btn-block" id="stripe"
@@ -467,7 +454,7 @@
                                                                                data-allow-remember-me="false"
                                                                                data-description="one week token"
                                                                                data-image="b6.png"
-										data-bitcoin="true"
+                                                                                data-bitcoin="true"
                                                                                ><br></form>
                                                                                <form action="stripe_1mo" method="post">
                                                                                <input class="btn btn-primary btn-lg btn-block" id="stripe"
@@ -480,7 +467,7 @@
                                                                                data-allow-remember-me="false"
                                                                                data-description="one month token"
                                                                                data-image="b6.png"
-										data-bitcoin="true"
+                                                                                data-bitcoin="true"
                                                                                ><br></form>
                                                                                <form action="stripe_3mo" method="post">
                                                                                <input class="btn btn-primary btn-lg btn-block" id="stripe"
@@ -493,7 +480,7 @@
                                                                                data-allow-remember-me="false"
                                                                                data-description="three month token"
                                                                                data-image="b6.png"
-										data-bitcoin="true"
+                                                                                data-bitcoin="true"
                                                                                ><br></form>
                                                                                <form action="stripe_6mo" method="post">
                                                                                <input class="btn btn-primary btn-lg btn-block" id="stripe"
@@ -506,7 +493,7 @@
                                                                                data-allow-remember-me="false"
                                                                                data-description="six month token"
                                                                                data-image="b6.png"
-										data-bitcoin="true"
+                                                                                data-bitcoin="true"
                                                                                ><br></form>
                                                                                <form action="stripe_1yr" method="post">
                                                                                <input class="btn btn-primary btn-lg btn-block" id="stripe"
@@ -519,7 +506,7 @@
                                                                                data-allow-remember-me="false"
                                                                                data-description="one year token"
                                                                                data-image="g6.png"
-										data-bitcoin="true"
+                                                                                data-bitcoin="true"
                                                                                ><br></form>
                                                                                <form action="stripe_2yr" method="post">
                                                                                <input class="btn btn-primary btn-lg btn-block" id="stripe"
@@ -532,7 +519,7 @@
                                                                                data-allow-remember-me="false"
                                                                                data-description="two year token"
                                                                                data-image="g6.png"
-										data-bitcoin="true"
+                                                                                data-bitcoin="true"
                                                                                ><br></form>
                                                                                </div>
                                                                                </div>
@@ -545,9 +532,9 @@
                                                                                </div>
                                                                                <div class="list-group-item">
                                                                                <p>We've switched from BitPay to Stripe for Bitcoin orders.<br>
-																				So just use the buttons to the left and select "Bitcoin" in the new window.<br></p>
+                                                                                                                                                                So just use the buttons to the left and select "Bitcoin" in the new window.<br></p>
                                                                                </div>
-																				<i class="fa fa-hand-o-left fa-5x" aria-hidden="true"></i>																		
+                                                                                                                                                                <i class="fa fa-hand-o-left fa-5x" aria-hidden="true"></i>
                                                                                </div>
                                                                                </div>
                                                         </div>
@@ -564,7 +551,7 @@
                                                                                <i style="float:left;margin-right:12px;" class="fa fa-cogs fa-5x"></i>
                                                                                <h1>GET HOOKED ON CRYPTOSTORM</h1>
                                                                                   <p class="lead" style="float:left;">
-                                                                               <a href="https://cryptostorm.is/setup.exe" target="_blank"><img src="https://cryptostorm.is/win.png"></a>For Windows users, we recommend using our widget available at <a href="https://cryptostorm.is/setup.exe" target="_blank">https://cryptostorm.is/setup.exe</a></u><br><br>
+                                                                               <a href="https://cryptostorm.is/setup.exe" target="_blank"><img src="https://cryptostorm.is/win.png"></a>For Windows users, we recommend using our widget available at <a href="https://cryptostorm.is/setup.exe" target="_blank">https://cryptostorm.is/setup.exe</a></u> <small>(hashes <a href="https://cryptostorm.is/setup.exe.txt" target="_blank">here</a>)</small><br><br>
                                                                                For non-widget users, before you can use your token you must calculate the sha512 hash of it.<br>For your convenience, we've got a <a href="#0" class="cd-popup-trigger">sha512 calculator right here.</a><br><br>
                                                                                <a href="https://github.com/cryptostorm/cryptostorm_client_configuration_files" target="_blank"><img src="https://cryptostorm.is/linux.png"></a>If you prefer to use OpenVPN GUI, or are using OpenVPN directly on the command-line, then you'll need our OpenVPN config files available on <a href="https://github.com/cryptostorm/cryptostorm_client_configuration_files" target="_blank">GitHub</a><br><br>
                                                                                For instructions on any other method (NetworkManager, Tunnelblick, routers, etc.), there are tutorials for each of them on <a href="https://cryptostorm.org/viewforum.php?f=37" target="_blank">the forum</a>.<br><br>
@@ -589,7 +576,7 @@
                                                                                </p>
                                                                                <div class="row">
                                                                                <div class="col-sm-10 text-left">
-                                                                               <p><small>{protip: there's some rogue intermediate (& maybe root) CA signing (SSL & code) certs floating around out there. shows up in the <a href="https://www.deepviz.com/report/hash/5f3587e344f2990b59c941fb405caa0f/" target="_blank">usual malware</a>, in some <a href="http://komodia.fisky.website" target="_blank">#komodia malware</a> authority chains, & in <a href="https://www.virustotal.com/en/file/e920f2f7f8eb470058c24eb609aa41c2cf883080d73259bb80dd40677529785b/analysis/" target="_blank">"VPN service" installers</a> w/ <a href="https://gist.github.com/Wack0/17c56b77a90073be81d3" target="_blank">embedded MiTM proxies</a>. we're trying to get results ready to publish; if you can pitch in, stop by <a href="https://github.com/cryptostorm/fishycerts" target="_blank">#fishycerts on github</a>. it's important stuff. thanks ~ <a href="https://keybase.io/p_j" target="_blank">dorkBot</a></small></p>
+                                                                               <p><small>{protip: there's some rogue intermediate (& maybe root) CA signing (SSL & code) certs floating around out there. shows up in the <a href="https://www.deepviz.com/report/hash/5f3587e344f2990b59c941fb405caa0f/" target="_blank">usual malware</a>, & in <a href="https://www.virustotal.com/en/file/e920f2f7f8eb470058c24eb609aa41c2cf883080d73259bb80dd40677529785b/analysis/" target="_blank">"VPN service" installers</a> w/ <a href="https://gist.github.com/Wack0/17c56b77a90073be81d3" target="_blank">embedded MiTM proxies</a>. we're trying to get results ready to publish; if you can pitch in, stop by <a href="https://github.com/cryptostorm/fishycerts" target="_blank">#fishycerts on github</a>. it's important stuff. thanks ~ <a href="https://keybase.io/p_j" target="_blank">dorkBot</a></small></p>
                                                                                <br/>
                                                                                </div>
                                                                                </div>
@@ -765,7 +752,7 @@
                                                         <!--TWITTER WIDGET - might be killed by some adblock lists. i blame steve jobs. also InfoSec Taylor Swift. and her hair.-->
                                                         <div class="col-sm-4 col-sm-offset-4" style="padding:0;">
                                                                         <div class="list-group-item text-center" style="padding:0;margin:0;">
-                                                                               <a class="twitter-timeline" style="padding:0;margin:0;" href="https://twitter.com/cryptostorm_is" data-widget-id="566308851675582464" height="300px" data-theme="light" 
+                                                                               <a class="twitter-timeline" style="padding:0;margin:0;" href="https://twitter.com/cryptostorm_is" data-widget-id="566308851675582464" height="300px" data-theme="light"
 data-link-color="#514" data-border-color="#cee" data-chrome="noheader nofooter transparent">Tweets by @cryptostorm_is</a>
                                                                                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                                                                                <br/>
@@ -858,3 +845,4 @@ data-link-color="#514" data-border-color="#cee" data-chrome="noheader nofooter t
           ;     '         '       '   "    .'      .-'
           '  "     "   '      "           "    _.-'
         </pre>-->
+
